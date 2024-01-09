@@ -2,9 +2,9 @@
 include_once 'header.php';
 ?>
 
-<h2 class="cText-center">Dropdown Button</h2>
+<h2 class="">Dropdown Button</h2>
 <div class="cDropdown ">
-  <button onclick="myFunction()" class="cDropbtn cText-center">Dropdown</button>
+  <button onclick="myFunction()" class="cDropbtn">Dropdown</button>
   <div id="cDropdown" class="cDropdown-content">
     <a href="#home">Home</a>
     <a href="#about">About</a>

@@ -12,17 +12,17 @@ include_once 'header.php';
 
 
 <!-- Modal top-->
-<h2 class="cText-center">Modal with Header and Footer</h2>
+<h2 class="">Modal with Header and Footer</h2>
 
 <!-- Trigger/Open The Modal -->
-<div class="cText-center">
-<button id="myBtn" class="cBtn-open">Open Modal</button>
+<div class="">
+  <button id="myBtn" class="cBtn-open">Open Modal</button>
 </div>
 <!-- The Modal -->
 <div id="myModal" class="cModal">
 
   <!-- Modal content -->
-  <div class="cModal-content">
+  <div class="cModal-content cModal-sm">
     <div class="cModal-header">
       <span class="cClose">&times;</span>
       <h2>Modal Header</h2>
@@ -40,36 +40,34 @@ include_once 'header.php';
 
 
 <script>
-    // Get top modal
-var modal = document.getElementById("myModal");
+  // Get top modal
+  var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("cClose")[0];
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("cClose")[0];
 
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+  // When the user clicks the button, open the modal 
+  btn.onclick = function () {
+    modal.style.display = "block";
+  }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == cModal) {
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
     modal.style.display = "none";
   }
-}
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == cModal) {
+      modal.style.display = "none";
+    }
+  }
 
 
 </script>
 <?php
 include_once 'footer.php';
 ?>
-
-

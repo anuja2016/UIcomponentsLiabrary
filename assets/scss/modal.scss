@@ -1,7 +1,7 @@
 // .cModal{
 //     .cModalBody{
 //         .cClose{
-            
+
 //         }
 //         .cModalHeader{
 
@@ -11,31 +11,33 @@
 //         }
 //     }
 // }
-.cText-center{
-    text-align: center;
+.cText-center {
+  text-align: center;
 }
-.cBtn-open{
-    padding:10px;
-    background-color: #000;
-    color:#FFFFFF;
-    cursor: pointer;
-    
+
+.cBtn-open {
+  padding: 10px;
+  background-color: #000;
+  color: #FFFFFF;
+  cursor: pointer;
+
 }
+
 /* The Modal (background) */
 .cModal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 100px; 
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
-  
-  
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+
+
   /* Modal Content */
   .cModal-content {
     position: relative;
@@ -43,25 +45,48 @@
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s
   }
-  
+
+  .cModal-sm{
+    width: 40%;
+  }
+  .cModal-md{
+    width: 60%;
+  }
+  .cModal-lg{
+    width: 80%;
+  }
   /* Add Animation */
   @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
+    from {
+      top: -300px;
+      opacity: 0
+    }
+
+    to {
+      top: 0;
+      opacity: 1
+    }
   }
-  
+
   @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+    from {
+      top: -300px;
+      opacity: 0
+    }
+
+    to {
+      top: 0;
+      opacity: 1
+    }
   }
-  
+
   /* The Close Button */
   .cClose {
     color: white;
@@ -69,32 +94,27 @@
     font-size: 28px;
     font-weight: bold;
   }
-  
+
   .cClose:hover,
   .cClose:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
   }
-  
+
   .cModal-header {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
   }
-  
-  .cModal-body 
-  {
+
+  .cModal-body {
     padding: 2px 16px;
   }
-  
+
   .cModal-footer {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
   }
-
-
-  
-  
 }
